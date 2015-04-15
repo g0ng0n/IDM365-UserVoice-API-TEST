@@ -213,7 +213,7 @@
                 <configuration>
                     <scanIntervalSeconds>10</scanIntervalSeconds>
                     <webApp>
-                        <contextPath>/fluxit</contextPath>
+                        <contextPath>/idm</contextPath>
                     </webApp>
                 </configuration>
             </plugin>
