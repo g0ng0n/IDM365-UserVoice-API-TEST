@@ -17,7 +17,7 @@ public class ArticleDAOImpl implements ArticleDAO {
     @Override
     public String getAllArticles(){
 
-        com.uservoice.Client client = new Client("idm365","V5pctvVn9NtDpiTifWl4Ig","33D2r4b0TWJTrC0Y67FUHVRl0rk9MOCaD3BtiPHYQw8");
+        com.uservoice.Client client = new Client(subdomain,apikey,secretkey);
 
         JSONObject response = client.get("/api/v1/articles");
 
@@ -26,7 +26,7 @@ public class ArticleDAOImpl implements ArticleDAO {
 
     @Override
     public String getArticle(String id) {
-        com.uservoice.Client client = new Client("idm365","V5pctvVn9NtDpiTifWl4Ig","33D2r4b0TWJTrC0Y67FUHVRl0rk9MOCaD3BtiPHYQw8");
+        com.uservoice.Client client = new Client(subdomain,apikey,secretkey);
 
         JSONObject response = client.get("/api/v1/articles/"+id);
 
