@@ -27,6 +27,7 @@
         </property>
     </bean>
 
+
     <!-- Load the Rest Service bean config file -->
     <import resource="classpath:RestServiceContext.xml" />
 
@@ -37,5 +38,11 @@
 
     <!-- Load the DAO bean config file -->
     <import resource="classpath:DaoContext.xml" />
+
+
+
+
+
+
 
 </beans>

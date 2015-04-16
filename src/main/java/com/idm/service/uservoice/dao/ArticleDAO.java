@@ -12,4 +12,11 @@ public interface ArticleDAO {
      */
     String getAllArticles();
 
+    /**
+     * Returns the configuration for a specific quick quote.
+     *
+     * @return articles responseFromUserVoice
+     */
+    String getArticle(String id);
+
 }

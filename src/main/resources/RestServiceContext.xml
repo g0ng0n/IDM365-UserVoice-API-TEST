@@ -14,16 +14,6 @@
        default-lazy-init="false">
 
 
-
-    <!-- REST BEANS -->
-    <bean id="articleRestService" class="com.idm.service.uservoice.webservice.impl.ArticleRestServiceImpl">
-        <property name="articleService" ref="articleService" />
-
-    </bean>
-
-
-
-
     <!-- Load CXF modules from cxf.jar -->
     <import resource="classpath:META-INF/cxf/cxf.xml" />
     <import resource="classpath:META-INF/cxf/cxf-servlet.xml" />
@@ -36,9 +26,9 @@
 
     <!-- Exposing the services
      as a REST service -->
-    <jaxrs:server id="restIDMService" address="/">
+    <jaxrs:server id="ArticleRestService" address="/">
         <jaxrs:serviceBeans>
-            <ref bean="articleRestService" />
+            <ref bean="articleRestService" ></ref>
         </jaxrs:serviceBeans>
 
     </jaxrs:server>
@@ -47,4 +37,10 @@
     <bean id="objectMapperFactory" parent="parentObjectMapperFactory" />
     <bean id="objectMapper" factory-bean="objectMapperFactory"
           factory-method="createCustomObjectMapper" />-->
+
+
+    <!-- REST BEANS -->
+    <bean id="articleRestService" class="com.idm.service.uservoice.webservice.impl.ArticleRestServiceImpl">
+        <property name="articleService" ref="articleService" />
+    </bean>
 </beans>

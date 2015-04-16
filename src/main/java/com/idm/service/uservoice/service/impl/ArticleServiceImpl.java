@@ -19,6 +19,11 @@ public class ArticleServiceImpl implements ArticleService {
 
     }
 
+    @Override
+    public String getArticle(String id) {
+        return articleDao.getArticle(id);
+    }
+
     public ArticleDAO getArticleDao() {
         return articleDao;
     }

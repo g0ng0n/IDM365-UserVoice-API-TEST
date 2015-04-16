@@ -16,4 +16,12 @@ public interface ArticleService {
     public String getAllArticles();
 
 
+    /**
+     * Returns a quick quote for the specified id.
+     *
+     * @return articlesResponse
+     */
+    public String getArticle(String id);
+
+
 }

@@ -15,7 +15,7 @@
 
 
 
-    <bean id="articleRestService" class="com.idm.service.uservoice.service.impl.ArticleServiceImpl">
+    <bean id="articleService" class="com.idm.service.uservoice.service.impl.ArticleServiceImpl">
         <property name="articleDao" ref="articleDao" />
 
     </bean>

@@ -20,6 +20,16 @@ public class ArticleRestServiceImpl implements ArticleRestService {
         return Response.ok(response).build();
     }
 
+
+    @Override
+    public Response getArticle(String id){
+
+        String response = articleService.getArticle(id);
+
+        return Response.ok(response).build();
+    }
+
+
     public ArticleService getArticleService() {
         return articleService;
     }
