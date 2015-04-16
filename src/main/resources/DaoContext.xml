@@ -16,6 +16,9 @@
 
 
     <bean id="articleDao" class="com.idm.service.uservoice.dao.impl.ArticleDAOImpl">
+        <property name="apikey" value="${com.idm.property.apikey}" />
+        <property name="secretkey" value="${com.idm.property.secretkey}" />
+        <property name="subdomain" value="${com.idm.property.subdomain}" />
 
     </bean>
 

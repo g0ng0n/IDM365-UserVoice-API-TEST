@@ -10,6 +10,9 @@ import net.sf.json.JSONObject;
  */
 public class ArticleDAOImpl implements ArticleDAO {
 
+    private String apikey;
+    private String subdomain;
+    private String secretkey;
 
     @Override
     public String getAllArticles(){
@@ -30,5 +33,27 @@ public class ArticleDAOImpl implements ArticleDAO {
         return response.toString();
     }
 
+    public String getSecretkey() {
+        return secretkey;
+    }
 
+    public void setSecretkey(String secretkey) {
+        this.secretkey = secretkey;
+    }
+
+    public String getApikey() {
+        return apikey;
+    }
+
+    public void setApikey(String apikey) {
+        this.apikey = apikey;
+    }
+
+    public String getSubdomain() {
+        return subdomain;
+    }
+
+    public void setSubdomain(String subdomain) {
+        this.subdomain = subdomain;
+    }
 }
